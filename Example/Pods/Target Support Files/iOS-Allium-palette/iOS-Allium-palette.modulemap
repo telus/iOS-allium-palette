@@ -1,0 +1,6 @@
+framework module iOS_Allium_palette {
+  umbrella header "iOS-Allium-palette-umbrella.h"
+
+  export *
+  module * { export * }
+}
