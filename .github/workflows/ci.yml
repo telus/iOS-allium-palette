@@ -12,6 +12,7 @@ jobs:
       run: |
         npm install -g podspec-bump
         pod --version
+        echo "$PWD"
         podspec-bump -w
         git commit -am "bump `podspec-bump --dump-version`" 
         git tag "`podspec-bump --dump-version`"
