@@ -11,7 +11,7 @@ jobs:
     - name: Update Cocoapod
       run: |
         npm install -g podspec-bump
-        podspec-bump -p /Users/runner/work/iOS-allium-palette/
+        podspec-bump -p /Users/runner/work/iOS-allium-palette/iOS-Allium-palette.podspec
         git commit -am "bump `podspec-bump --dump-version`" 
         git tag "`podspec-bump --dump-version`"
         git push --tags
