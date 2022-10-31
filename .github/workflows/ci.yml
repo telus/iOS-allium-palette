@@ -11,16 +11,9 @@ jobs:
     - name: Update Cocoapod
       run: |
         npm install -g podspec-bump
-        ls
-        echo "$PWD"
         podspec-bump -w
-        # git commit -am "bump `podspec-bump --dump-version`" 
-        # git tag "`podspec-bump --dump-version`"
-        # git push --tags
-        # pod trunk push --alow-warnings
-      shell: bash
-    - name: Test and Lint
-      uses: ty0x2333/cocoapods-action@master
-      with:
-        additional_build_params: -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0'
-        
+        git commit -am "bump `podspec-bump --dump-version`" 
+        git tag "`podspec-bump --dump-version`"
+        git push --tags
+        pod trunk push --alow-warnings
+      shell: zsh
