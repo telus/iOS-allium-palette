@@ -16,4 +16,4 @@ jobs:
         git tag "`podspec-bump --dump-version`"
         git push --tags
         pod trunk push --alow-warnings
-      shell: zsh
+      shell: sh
