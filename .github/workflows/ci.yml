@@ -11,6 +11,7 @@ jobs:
     - name: Update Cocoapod
       run: |
         npm install -g podspec-bump
+        pod --version
         podspec-bump -w
         git commit -am "bump `podspec-bump --dump-version`" 
         git tag "`podspec-bump --dump-version`"
