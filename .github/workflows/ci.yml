@@ -11,7 +11,7 @@ jobs:
     - name: Update Cocoapod
       run: |
         npm install -g podspec-bump
-        for file in /Users/runner/work/iOS-allium-palette/iOS-allium-palette; do
+        for file in /Users/runner/work/*; do
             echo "${file##*/}"
         done
         # podspec-bump -p /Users/runner/work/iOS-allium-palette/iOS-Allium-palette.podspec
