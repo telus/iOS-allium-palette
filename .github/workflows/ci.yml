@@ -10,9 +10,11 @@ jobs:
     steps:
     - name: Update Cocoapod
       run: |
-        cd Example
-        pod repo update
-        pod install
+        podspec-bump -w
+        git commit -am "bump `podspec-bump --dump-version`" 
+        git tag "`podspec-bump --dump-version`"
+        git push --tags
+        pod trunk push --alow-warnings
       shell: bash
     - name: Test and Lint
       uses: ty0x2333/cocoapods-action@master
