@@ -25,4 +25,5 @@ jobs:
           git commit -am "bump `podspec-bump --dump-version`"
           git tag "`podspec-bump --dump-version`"
           git push --tags
+          pod trunk register
           pod trunk push --allow-warnings
