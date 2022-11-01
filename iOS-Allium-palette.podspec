@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOS-Allium-palette'
-  s.version          = '0.1.11'
+  s.version          = '0.1.12'
   s.summary          = 'A native iOS library exposing the iOS-Allium-palette files.'
 
 # This description is used to generate tags and improve search results.
