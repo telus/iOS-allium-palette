@@ -1,11 +1,23 @@
-name: Update Pod repo
-
-on: [push]
+name: Release
+on:
+  push:
+    branches:
+      - main
+      # Add any backport branches here that should also be released
 
 jobs:
-  build:
+  publish:
+    name: Publish
     runs-on: macOS-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        shell: sh
+        with:
+          # PRIVATE_DEPLOY_KEY is the private rsa key, the public key is configured as a deploy key in the repo settings
+          # This allows commits and tags to be pushed back to main (a protected branch)
+          ssh-key: ${{ secrets.PRIVATE_DEPLOY_KEY }}
+
+      - name: Publish
+        id: publish
+        run: |
+          python3 auto.py
