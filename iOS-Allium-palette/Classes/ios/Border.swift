@@ -14,5 +14,6 @@ public enum PaletteBorder {
     public static let border2 = CGFloat(2)
     public static let border3 = CGFloat(3)
     public static let border4 = CGFloat(4)
+    public static let border5 = CGFloat(5)
     public static let none = CGFloat(0)
 }
