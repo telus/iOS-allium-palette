@@ -25,5 +25,5 @@ jobs:
           git commit -am "bump `podspec-bump --dump-version`"
           git tag "`podspec-bump --dump-version`"
           git push --tags
-          pod trunk register akshay.pandey@cocoapods.org 'Akshay Pandey' --description='macbook air'
+          pod trunk register akshay.pandey@telus.com 'Akshay Pandey' --description='macbook air'
           pod trunk push --allow-warnings
