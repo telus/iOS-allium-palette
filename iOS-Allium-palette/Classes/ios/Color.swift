@@ -11,7 +11,6 @@ import UIKit
 
 public enum PaletteColor {
     public static let amber = UIColor(red: 0.980, green: 0.792, blue: 0.412, alpha: 1)
-    public static let amberImaginary = UIColor(red: 0.980, green: 0.792, blue: 0.412, alpha: 1)
     public static let amberDark = UIColor(red: 0.706, green: 0.529, blue: 0.173, alpha: 1)
     public static let amberLight = UIColor(red: 1.000, green: 0.976, blue: 0.933, alpha: 1)
     public static let bgModal = UIColor(red: 0.957, green: 0.957, blue: 0.969, alpha: 0.97)
