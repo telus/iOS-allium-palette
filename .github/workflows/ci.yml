@@ -20,10 +20,10 @@ jobs:
       - name: Publish
         id: publish
         run: |
-        npm install -g podspec-bump
-        podspec-bump -w
-        git commit -am "bump `podspec-bump --dump-version`" 
-        git tag "`podspec-bump --dump-version`"
-        git push --tags
-        pod trunk push --alow-warnings
+          npm install -g podspec-bump
+          podspec-bump -w
+          git commit -am "bump `podspec-bump --dump-version`" 
+          git tag "`podspec-bump --dump-version`"
+          git push --tags
+          pod trunk push --alow-warnings
       shell: sh
