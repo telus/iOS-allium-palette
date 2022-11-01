@@ -22,6 +22,7 @@ jobs:
         run: |
           npm install -g podspec-bump
           podspec-bump -w
+          git add .
           git commit -am "bump `podspec-bump --dump-version`"
           git tag "`podspec-bump --dump-version`"
           git push --tags
