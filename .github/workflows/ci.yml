@@ -10,8 +10,5 @@ jobs:
     steps:
     - name: Update Cocoapod
       run: |
-        git commit -am "bump `podspec-bump --dump-version`" 
-        git tag "`podspec-bump --dump-version`"
-        git push --tags
-        pod trunk push --allow-warnings
+        python3 auto.py
       shell: sh
