@@ -4,12 +4,12 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: macOS-latest
-    
     steps:
-    - name: Update Cocoapod
-    - uses: actions/checkout@v2
-      run: |
-        python3 auto.py
-      shell: sh
+      - name: Checkout
+      - uses: actions/checkout@v2
+
+      - name: Update Cocoapod
+        run: |
+          python3 auto.py
+        shell: sh
