@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - name: Update Cocoapod
+    - uses: actions/checkout@v2
       run: |
         python3 auto.py
       shell: sh
