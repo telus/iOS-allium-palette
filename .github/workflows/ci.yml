@@ -20,4 +20,10 @@ jobs:
       - name: Publish
         id: publish
         run: |
-          python3 auto.py
+        npm install -g podspec-bump
+        podspec-bump -w
+        git commit -am "bump `podspec-bump --dump-version`" 
+        git tag "`podspec-bump --dump-version`"
+        git push --tags
+        pod trunk push --alow-warnings
+      shell: sh
