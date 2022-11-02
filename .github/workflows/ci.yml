@@ -22,8 +22,8 @@ jobs:
         run: |
           npm install -g podspec-bump
           podspec-bump -w
-          git add .
           git commit -am "bump `podspec-bump --dump-version`"
+          git push
           git tag "`podspec-bump --dump-version`"
           git push --tags
           pod trunk register akshay.pandey@telus.com 'Akshay Pandey' --description='macbook air'
