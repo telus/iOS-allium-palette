@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'HelveticaNow300normal';
+  src: url('./HelveticaNow-300.otf');
+  font-display: block;
+}
+@font-face {
+  font-family: 'HelveticaNow400normal';
+  src: url('./HelveticaNow-400.woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'HelveticaNow500normal';
+  src: url('./HelveticaNow-500.woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'HelveticaNow700normal';
+  src: url('./HelveticaNow-700.woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'HelveticaNowOTF400normal';
+  src: url('./HelveticaNowOTF-400.otf');
+  font-display: block;
+}
+@font-face {
+  font-family: 'HelveticaNowOTF500normal';
+  src: url('./HelveticaNowOTF-500.otf');
+  font-display: block;
+}
+@font-face {
+  font-family: 'HelveticaNowOTF700normal';
+  src: url('./HelveticaNowOTF-700.otf');
+  font-display: block;
+}
